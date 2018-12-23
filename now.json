@@ -1,0 +1,17 @@
+{
+    "version": 2,
+    "env": {
+      "CTF_SPACE_ID": "@ctf-space-id",
+      "CTF_CDA_TOKEN": "@ctf-cda-token",
+      "CTF_CPA_TOKEN": "@ctf-cpa-token"
+    },
+    "builds": [
+      {
+        "src": "next.config.js",
+        "use": "@now/next"
+      },
+      { "src": "static/**", "use": "@now/static" }
+    ],
+    "routes": [{ "src": "static/(.*)", "dest": "/static/$1" }]
+  }
+  
