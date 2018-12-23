@@ -5,7 +5,7 @@ const ROOT_URL = process.env.ROOT_URL;
 const HeadCommon = ({ title, description }) => (
 	<Head>
 		{/* Global site tag (gtag.js) - Google Analytics */}
-		<script
+		{/* <script
 			dangerouslySetInnerHTML={{
 				__html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -13,7 +13,7 @@ const HeadCommon = ({ title, description }) => (
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','UA-114310231-1');`
 			}}
-		/>
+		/> */}
 
 		{/* Device Config */}
 		<meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
@@ -21,7 +21,7 @@ const HeadCommon = ({ title, description }) => (
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 
 		{/* Page Info */}
-		<title>LOU | {title}</title>
+		<title>Kyle Lawson | {title}</title>
 		<meta name="description" content={description} />
 		<meta name="author" content="Kyle Lawson" />
 

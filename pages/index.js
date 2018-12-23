@@ -6,18 +6,22 @@ import globalStyle from '../_global.scss';
 
 // Components
 import { HeadCommon } from '../components/seo';
+import { Stars } from '../components/common';
 
 const Index = () => (
-	<div>
+	<div style={{ width: '100vw', height: '100vh', backgroundColor: 'black' }}>
 		<HeadCommon title={'Page Title'} description={'Page Description'} />
-		Index
+		<Stars count={100} />
 	</div>
 );
 
 // Index.getInitialProps = async () => {
 // 	const client = createClient();
-// 	const content = await client.getEntry('57frekDudOQYIqGG6AG2kc');
-// 	return { page: content.fields };
+// 	const projects = await client.getEntries({
+// 		content_type: 'project'
+// 	});
+// 	console.log(projects);
+// 	return { projects };
 // };
 
 export default Index;

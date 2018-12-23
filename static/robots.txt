@@ -4,4 +4,4 @@
 User-agent: *
 Disallow: /dashboard
 
-Sitemap: https://www.project.com/static/sitemap.xml
+Sitemap: https://kylelawson.io/static/sitemap.xml
